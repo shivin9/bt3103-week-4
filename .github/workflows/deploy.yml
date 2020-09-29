@@ -9,6 +9,7 @@ jobs:
   firebase-deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
       - name: Installing project dependencies
         run: npm install
       - name: Building the project
